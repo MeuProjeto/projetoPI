@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biblioteca Virtual</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        
+        <cabecalho th:insert="cabecalho.html" />
+        <h1>Lista de livros</h1>
+        
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Autor</th>
+                <th>Disponível</th>
+                <th>Ações</th>
+            </thead>
+            <tbody id="tabelaLivros"></tbody>
+
+        </table>
+        <script src="/js/livros.js"></script>
+    </body>
+</html>

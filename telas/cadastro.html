@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biblioteca Virtual</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        
+        <cabecalho th:insert="cabecalho.html" />
+        <h1>Cadastro de livros</h1>
+        
+        <form id="formLivro">
+            <input type="hidden" id="livroId">
+            <p>Nome: <input type="text" id="nome"></p>
+            <p>Autor: <input type="text" id="autor"></p>
+            <p>
+                Disponível:
+                <input type="checkbox" id="disponivel">
+            </p>
+            <button type="submit">Salvar</button>
+        </form>
+        
+        <script src="/js/livros.js"></script>
+    </body>
+</html>
